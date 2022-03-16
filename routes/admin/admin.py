@@ -9,4 +9,8 @@ def home():
 
 @admin_blueprint.route("/register")
 def register():
-    return "Register"
+    return render_template("admin/register.html")
+
+@admin_blueprint.route("/todos")
+def todos():
+    return render_template("admin/todos.html")

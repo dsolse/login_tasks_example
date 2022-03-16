@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width">
     {% block title %}
     {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
 <body>
     <header>
         <nav>
-	    <a href="{{ url_for('main.todos') }}">Go todos</a>
-	    <a href="{{ url_for('main.register') }}">Register</a>
-	    <a href="{{ url_for('main.home') }}">home</a>
+        <a href="{{ url_for('main.home') }}"> <li>home</li> </a>
+	    <a href="{{ url_for('main.todos') }}"> <li>Go todos</li></a>
+	    <a href="{{ url_for('main.register') }}"> <li>Register</li> </a>
         </nav>
     </header>
     {% block content %}

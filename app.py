@@ -8,3 +8,4 @@ app.register_blueprint(admin_blueprint)
 app.register_blueprint(main_blueprint)
 
 
+
