@@ -1,4 +1,4 @@
-from db.db import db
+from utils_app.db import db
 from datetime import datetime
 
 class Todos(db.Model) # type: ignore

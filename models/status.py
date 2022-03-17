@@ -1,4 +1,4 @@
-from db.db import db
+from utils_app.db import db
 
 class Status(db.Model): # type: ignore
 	"""

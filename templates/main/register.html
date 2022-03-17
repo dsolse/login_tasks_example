@@ -6,6 +6,21 @@
 
 {% block content %} 
 	<h1>Registrate o logeate</h1>
+	<div class="formulario">
+		<form action="{{ url_for('main.register') }}" method="post">
+		    {{ form.hidden_tag() }}
+		    {{ form.nickname.label }}
+		    {{ form.nickname(class="form-el") }}
+		    {{ form.name.label }}
+		    {{ form.name(class="form-el") }}
+		    {{ form.password.label(class="form-el") }}
+		    {{ form.password }}
+		    {{ form.password_confirm.label(class="form-el") }}
+		    {{ form.password_confirm(class="form-el") }}
+		    {{ form.submit }}
+		</form>	
+	</div>
+	
 {% endblock content %}
 
 

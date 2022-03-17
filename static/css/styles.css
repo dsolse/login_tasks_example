@@ -20,4 +20,14 @@ li {
 	text-decoration: none;
 }
 
+.form-el {
+	display: block;
+	padding: 1.2em;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
 
